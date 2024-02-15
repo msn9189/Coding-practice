@@ -9,5 +9,8 @@ contract ZombieFactory {
         string name;
         uint dna;
     }
+
+    Zombie[] public zmobies;
+    
     
     }
