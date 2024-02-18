@@ -17,4 +17,7 @@ contract ZombieFactory {
     }
 
     
+    function _generateRandomDna(string memory _str) private view returns (uint) {
+    
     }
+}
