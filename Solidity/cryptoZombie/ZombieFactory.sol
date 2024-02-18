@@ -13,7 +13,7 @@ contract ZombieFactory {
     Zombie[] public zmobies;
 
     function createZombie( string memory _name, uint _dna) public {
-        
+        Zombie.push(Zombie(_name, _dna));
     }
 
     
