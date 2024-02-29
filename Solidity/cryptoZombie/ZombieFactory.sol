@@ -15,7 +15,8 @@ contract ZombieFactory {
     Zombie[] public zmobies;
 
     function _createZombie( string memory _name, uint _dna) private {
-        Zombie.push(Zombie(_name, _dna));
+        uint id = Zombie.push(Zombie(_name, _dna)) -1;
+        emit.NewZombie(id, _name, _dna);
     }
 
     
