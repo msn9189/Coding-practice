@@ -7,4 +7,9 @@ contract Todos {
         bool completed;
     }
 
+    //An array of 'Todo' structs
+    Todo[] public todos;
+
+    
+
 }
