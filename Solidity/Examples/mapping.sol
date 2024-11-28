@@ -11,4 +11,8 @@ contract Mapping {
     function set(address _addr, uint56 _i) public {
         myMap[_addr] = _i;
     }
+
+    function remove(address _addr) public {
+        delete myMap[_addr];
+    }
 }
