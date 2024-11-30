@@ -21,3 +21,9 @@ contract Mapping {
         delete myMap[_addr];
     }
 }
+
+contract NestedMapping {
+    mapping(address => mapping(uint256 => bool)) public nested;
+
+    
+}
