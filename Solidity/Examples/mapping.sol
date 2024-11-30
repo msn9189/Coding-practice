@@ -25,5 +25,7 @@ contract Mapping {
 contract NestedMapping {
     mapping(address => mapping(uint256 => bool)) public nested;
 
-    
+    function get(address _addr1, uint256 _i) public view returns (bool) {
+        return nested[_addr1][_i];
+    }
 }
