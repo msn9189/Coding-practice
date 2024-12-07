@@ -11,5 +11,10 @@ contract Enum {
     }
 
     Status public status;
+
+    function get() public view returns (Status) {
+        return status;
+    }
+
     
 }
