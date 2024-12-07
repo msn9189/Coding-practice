@@ -24,7 +24,11 @@ contract Enum {
         status = Status.Canceled;
     }
 
-    
+    function reset() public {
+        delete status;
+    }
+
+
 
 
 
