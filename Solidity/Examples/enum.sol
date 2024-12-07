@@ -28,8 +28,4 @@ contract Enum {
         delete status;
     }
 
-
-
-
-
 }
