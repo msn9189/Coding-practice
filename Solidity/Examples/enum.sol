@@ -16,5 +16,10 @@ contract Enum {
         return status;
     }
 
+    function set(Status _status) public {
+        status = _status;
+    }
     
+
+
 }
