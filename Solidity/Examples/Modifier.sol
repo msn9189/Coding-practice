@@ -24,4 +24,11 @@ contract FunctionModifier {
         owner = _newOwner;
         }
 
+    modifier noReentrancy() {
+        require(!locked, "No reentrancy");
+        locked = true;
+        _;
+        locked = false;
+    }
+
 }
