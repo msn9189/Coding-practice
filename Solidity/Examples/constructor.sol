@@ -7,4 +7,5 @@ contract X {
     constructor(string memory _name){
         name = _name;
     }
+    
 }
