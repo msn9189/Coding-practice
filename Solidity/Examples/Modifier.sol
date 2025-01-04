@@ -31,4 +31,11 @@ contract FunctionModifier {
         locked = false;
     }
 
+    function decrement(uint256 i) public noReentrancy {
+        x -=i;
+        if(i> 1){
+            decrement( i - 1);
+        }
+    }
+
 }
