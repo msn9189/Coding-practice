@@ -5,5 +5,9 @@ contract FunctionModifier {
     address public owner;
     uint256 public x = 10;
     bool public locked;
+
+    constructor () {
+        owner = msg.sender;
+    }
     
 }
