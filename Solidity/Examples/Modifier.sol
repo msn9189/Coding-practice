@@ -2,14 +2,17 @@
 pragma solidity 0.8.26;
 
 contract FunctionModifier {
+    // We will use these variables to demonstrate how to use modifiers
     address public owner;
     uint256 public x = 10;
     bool public locked;
 
     constructor () {
+        // Set the transaction sender as the owner of the contract.
         owner = msg.sender;
     }
 
+    // Modifier to check that the caller is the owner of  the contract.
     modifier onlyOwner() {
         require(msg.sender == owner, "Not Owner");
         _;
