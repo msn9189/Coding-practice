@@ -20,6 +20,7 @@ contract FunctionModifier {
         _;
     }
 
+    // Modifiers can take inputs. This modifier checks that the address passed in is not the zero address.
     modifier validAddress(address _addr) {
         require(_addr != address(0), "Not valid address");
         _;
