@@ -15,6 +15,8 @@ contract FunctionModifier {
     // Modifier to check that the caller is the owner of  the contract.
     modifier onlyOwner() {
         require(msg.sender == owner, "Not Owner");
+        // underscore is a special character only used inside a function modifier and it tells 
+        // Solidity to execute the rest of the code.
         _;
     }
 
