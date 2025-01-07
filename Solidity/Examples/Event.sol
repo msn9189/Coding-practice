@@ -9,5 +9,7 @@ contract EventDrivenArchitecture {
     event TransferConfirmed(
         address indexed from, address indexed to, uint256 value
     );
-    
+
+    mapping(bytes32 => bool) public transferConfirmations;
+
 }
