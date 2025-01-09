@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.14;
 
+// Event-Driven Architecture
 contract EventDrivenArchitecture {
     event TransferInitiated(
         address indexed from, address indexed to, uint256 value
@@ -12,7 +13,7 @@ contract EventDrivenArchitecture {
 
     mapping(bytes32 => bool) public transferConfirmations;
 
-    function initiateTransfer(address to, uint256 value) public {
+    function confirmTransfer(address to, uint256 value) public {
         require(!transferConfirmations[transferId], "Transfer already confirmed");
         transferConfirmations[transferId] = true;
         emit TransferConfirmed(msg.sender, address(this), 0);
