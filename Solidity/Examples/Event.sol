@@ -13,9 +13,10 @@ contract EventDrivenArchitecture {
 
     mapping(bytes32 => bool) public transferConfirmations;
 
-    function confirmTransfer(address to, uint256 value) public {
+    function confirmTransfer(bytes32 transferId) public {
         require(!transferConfirmations[transferId], "Transfer already confirmed");
         transferConfirmations[transferId] = true;
         emit TransferConfirmed(msg.sender, address(this), 0);
+        //..(confirm transfer logic)
     }
 }
