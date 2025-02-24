@@ -9,12 +9,12 @@ contract Counter {
         return count;
     }
 
-    //Function to increment count by 1
+    //The function increases count by 1
     function inc() public {
         count += 1;
     }
 
-    //Function to decrement count by 1
+    //The function decreases count by 1
     function dec() public {
         count -=1;
     }

@@ -25,7 +25,7 @@ contract Todos {
         todos.push(todo);
     }
 
-    // update text
+    // This function updates the text
     function updateText(uint256 _index, string calldata _text) public {
         Todo storage todo = todos[_index];
         todo.text = _text;
