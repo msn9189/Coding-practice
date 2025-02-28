@@ -12,5 +12,8 @@ contract ReceiveEther {
 }
 
 contract SendEther {
-  
+  function sendViaTransfer(address payable _to) public payable {
+    _to.transfer(msg.value);
+  }
+
 }
