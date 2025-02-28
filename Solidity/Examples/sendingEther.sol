@@ -10,3 +10,7 @@ contract ReceiveEther {
     return address(this).balance;
   }
 }
+
+contract SendEther {
+  
+}
