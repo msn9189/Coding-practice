@@ -16,4 +16,8 @@ contract SendEther {
     _to.transfer(msg.value);
   }
 
+  function sendViaSend(address payable _to) public payable {
+    bool sent = _to.send(msg.value);
+    require(sent, "Failed to send Ether");
+  }
 }
