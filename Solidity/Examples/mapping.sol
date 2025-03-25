@@ -23,12 +23,11 @@ contract Mapping {
 }
 
 contract NestedMapping {
-    // Nested mapping (mapping from address to another mapping)
+    // Nested mapping
     mapping(address => mapping(uint256 => bool)) public nested;
 
     function get(address _addr1, uint256 _i) public view returns (bool) {
         // You can get values from a nested mapping
-        // even it is not initialized
         return nested[_addr1][_i];
     }
 
