@@ -7,3 +7,5 @@ function letterFinder(word, match){
         }
     }
 }
+
+letterFinder('Nazi', 'a');
