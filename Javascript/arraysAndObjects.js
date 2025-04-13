@@ -9,3 +9,4 @@ clothes.push("dress");
 console.log(clothes);
 
 
+var favCar = {};
