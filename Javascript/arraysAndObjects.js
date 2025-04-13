@@ -10,3 +10,6 @@ console.log(clothes);
 
 
 var favCar = {};
+favCar.color ='Dark blue';
+favCar.convertible = true;
+console.log(favCar);
