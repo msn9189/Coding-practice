@@ -13,3 +13,9 @@ var favCar = {};
 favCar.color ='Dark blue';
 favCar.convertible = true;
 console.log(favCar);
+
+var car = {};
+car.color = "blue";
+car.turnKey = function(){
+    console.log('engine running');
+}
