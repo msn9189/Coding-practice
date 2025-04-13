@@ -5,3 +5,7 @@ clothes.push("scarf");
 clothes.push("coat");
 clothes.push("socks");
 clothes.pop();
+clothes.push("dress");
+console.log(clothes);
+
+
