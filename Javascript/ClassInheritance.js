@@ -46,3 +46,16 @@ class Bird extends Animal {
         console.log(this.sound);
     }
 }
+
+class HouseCat extends Cat {
+    constructor(houseCatSound = 'meow', sound, canJumpHigh, canClimbTrees, color, energy){
+        super(sound, canJumpHigh, canClimbTrees, color, energy)
+        this.houseCatSound = houseCatSound;
+    }
+    makeSound(option){
+        if(option){
+            super.makeSound();
+        }
+        console.log(this.houseCatSound);
+    }
+}
