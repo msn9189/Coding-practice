@@ -72,3 +72,18 @@ class Tiger extends Cat {
         console.log(this.tigerSound);
     }
 }
+
+class Parrot extends Bird {
+    constructor(canTalk = false, sound, canFly, color, energy){
+        super(sound, canFly, color, energy);
+        this.canTalk = canTalk;
+    }
+    makeSound(option){
+        if(option){
+            super.makeSound();
+        }
+        if(this.canTalk){
+            console.log("I'm a talking parrot!");
+        }
+    }
+}
