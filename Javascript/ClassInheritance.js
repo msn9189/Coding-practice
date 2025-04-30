@@ -59,3 +59,16 @@ class HouseCat extends Cat {
         console.log(this.houseCatSound);
     }
 }
+
+class Tiger extends Cat {
+    constructor(tigerSound = 'Roar!', sound, canClimbTrees, canJumpHigh, color, energy){
+        this.tigerSound = tigerSound;
+    }
+
+    makeSound(option){
+        if(option) {
+            super.makeSound();
+        }
+        console.log(this.tigerSound);
+    }
+}
